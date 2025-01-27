@@ -1,10 +1,10 @@
 # OCR-Numeric-System
 
-##Overview
+## Overview
 
 The OCR-Numeric-System is an Optical Character Recognition (OCR) pipeline designed to extract handwritten numeric data (whole numbers and decimal values) from scanned cadastral map images. This system preprocesses input images, detects regions of interest, and applies OCR engines to digitize the handwritten data, ignoring irrelevant text or noise.
 
-##Key Features
+## Key Features
 
 Numeric Extraction: Extracts whole numbers and decimal values from handwritten content.
 
@@ -14,7 +14,7 @@ Noise Handling: Handles noisy and low-quality images with preprocessing techniqu
 
 Flexible Output: Saves results in a structured CSV file.
 
-##Project Structure
+## Project Structure
 
 OCR-Numeric-System/
 ├── input_images/                
@@ -30,50 +30,50 @@ OCR-Numeric-System/
 ├── LICENSE                     
 └── tests/                       
 
-##Installation
+## Installation
 
-###Prerequisites
+### Prerequisites
 
 Python 3.7 or higher
 
-##pip package manager
+## pip package manager
 
 GPU (optional, recommended for EasyOCR performance)
 
-###Step 1: Clone the Repository
+### Step 1: Clone the Repository
 git clone https://github.com/your-repo/OCR-Numeric-System.git
 cd OCR-Numeric-System
 
-###Step 2: Install Dependencies
+### Step 2: Install Dependencies
 
 Install all required libraries using the requirements.txt file:
 pip install -r requirements.txt
 
-##Usage
+## Usage
 
-###1. Add Input Images
+### 1. Add Input Images
 
 Place scanned cadastral map images (JPG/PNG format) into the input_images/ folder.
 
-###2. Run the System
+### 2. Run the System
 
 Execute the pipeline by running the main.py script:
 python src/main.py
 
-###3. View Results
+### 3. View Results
 
 Extracted numeric data will be saved in the output/ folder as a CSV file. The CSV includes columns for:
 
-##Image Name
+## Image Name
 
 Extracted Numbers
 
 Example Command
 python src/main.py
 
-##How It Works
+## How It Works
 
-###Preprocessing
+### Preprocessing
 
 Converts images to grayscale.
 
@@ -83,13 +83,13 @@ Enhances numeric content visibility with adaptive thresholding.
 
 Cleans small imperfections via morphological operations.
 
-##Region Detection
+## Region Detection
 
 Identifies potential regions of interest (ROIs) using contour detection.
 
 Filters irrelevant regions based on size constraints.
 
-##OCR Integration
+## OCR Integration
 
 Tesseract OCR: Extracts numeric content with optimized configuration.
 
@@ -97,13 +97,13 @@ EasyOCR: Handles variations in handwriting and noisy input.
 
 Results from both OCR engines are combined and validated.
 
-##Post-Processing
+## Post-Processing
 
 Cleans and validates extracted data using regular expressions.
 
 Filters out irrelevant or invalid text.
 
-##Dependencies
+## Dependencies
 
 opencv-python
 
