@@ -26,9 +26,7 @@ OCR-Numeric-System/
 │   ├── utils.py                 
 │   └── main.py                  
 ├── requirements.txt             
-├── README.md                   
-├── LICENSE                     
-└── tests/                       
+├── README.md                                       
 
 ## Installation
 
