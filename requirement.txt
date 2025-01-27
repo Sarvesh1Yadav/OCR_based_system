@@ -1,0 +1,8 @@
+opencv-python
+pytesseract
+easyocr
+numpy
+csv
+torch
+torchvision
+torchaudio
